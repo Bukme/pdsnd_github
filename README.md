@@ -19,7 +19,8 @@ This project works out statistics, utilizes an interactive environment where use
 ### Credits
 
 * Python Programming Tutorial: Python while loop input   validation
-
-* https://www.youtube.com/watch?v=akDSbJJI-J0
+https://www.youtube.com/watch?v=akDSbJJI-J0
 
 * https://knowledge.udacity.com
+
+* https://review.udacity.com
