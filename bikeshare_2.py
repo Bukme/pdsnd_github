@@ -123,7 +123,7 @@ def trip_duration_stats(df):
     print('Total travel time is:',total_travel_time)
     # TO DO: display mean travel time
     average_travel_time = df['Trip Duration'].mean()
-    print('Average travel time is:',average_travel_time)
+    print('Average travel time is: {}'.format(average_travel_time))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -144,7 +144,7 @@ def user_stats(df):
 
     if 'Gender' in df.columns:
         gender = df['Gender'].value_counts()
-        print('Total number of gender is:',gender)
+        print('Total number of gender is: {}'.format(gender))
     else:
         print('Gender stats cannot be calculated, it does not exist in the dataframe')
 
@@ -154,9 +154,9 @@ def user_stats(df):
         recent_birth_year = df['Birth Year'].max()
         popular_birth_year = df['Birth Year'].mode()[0]
 
-        print('Earliest year of birth is:',earliest_birth_year)
-        print('Most recent year of birth is:',recent_birth_year)
-        print('Most common year of birth is:',popular_birth_year)
+        print('Earliest year of birth is: {}'.format(earliest_birth_year))
+        print('Most recent year of birth is: {}'.format(recent_birth_year))
+        print('Most common year of birth is: {}'.format(popular_birth_year))
 
     else:
         print('Birth Year stats cannot be calculated, it does not exist in the dataframe')
